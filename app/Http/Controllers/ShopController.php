@@ -12,6 +12,7 @@ class ShopController extends Controller
         // $spcilalist_data = SpecilaistModel::get();
         // dd($spcilalist_data);
         return view('pages.shop.shop_add');
+        // dssfgfdgdfg
 
     }
 
