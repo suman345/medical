@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SpecialistController;
+use App\Http\Controllers\ShopController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +31,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+
+    Route::get('/docotor-specialist',[SpecialistController::class, 'specialist'])->name('docotor-specialist');
+    Route::get('/shop-add',[ShopController::class, 'shop'])->name('shop-add');
+    Route::get('/shop-show',[ShopController::class, 'shop_show'])->name('shop-show');
 });
 
 
