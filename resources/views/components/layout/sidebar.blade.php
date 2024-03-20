@@ -27,13 +27,20 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="{{ route('docotor-specialist') }}" class="waves-effect">
+                        <i class="dripicons-device-desktop"></i>
+                        <span>Specialist<span class="badge badge-pill badge-primary float-right"></span></span>
+                    </a>
+                </li>
+
                 <li class="menu-title">Components</li>
 
                 <li class="has_sub">
-                    <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-jewel"></i> <span> UI Elements </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-jewel"></i> <span> All Shop </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                     <ul class="list-unstyled">
-                        <li><a href="{{ route('test-table') }}">Alerts</a></li>
-                        <li><a href="ui-alertify.html">Alertify</a></li>
+                        <li><a href="{{ route('shop-add') }}">Shop Add</a></li>
+                        <li><a href="{{ route('shop-show')}}">Shop Show</a></li>
                                                           
                     </ul>
                 </li>
